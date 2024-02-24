@@ -8,18 +8,30 @@ operator = input("elige un operador matematico:  ")
 print("segundo numero")
 num2 = int(input())
 
-def suma(a, b): 
-    return a + b
+def suma(num1, num2): 
+    return num1 + num2
 
-def resta(a, b):
-    return a - b
+def resta(num1, num2):
+    return num1 - num2
 
-def multiplicacion(a, b):
-    return a * b
+def multiplicacion(num1, num2):
+    return num1 * num2
 
-def divicion(a, b):
-    if b != 0:
-        return a / b 
+def divicion(num1, num2):
+    if num2 != 0:
+        return num1 / num2 
     else:
         return "ERROR : divicion por cero"
     
+match operator:
+    case "+": 
+        print(f"la suma es igual a =  {suma(num1, num2)}") 
+    
+    case "-": 
+        print(f"la resta es igual a =  {resta(num1, num2)}") 
+    
+    case "*": 
+        print(f"la multiplicacion es igual a =  {multiplicacion(num1, num2)}") 
+
+    case "/": 
+        print(f"la divicion es igual a =  {divicion(num1, num2)}") 
