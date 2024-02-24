@@ -22,7 +22,7 @@ def divicion(num1, num2):
         return num1 / num2 
     else:
         return "ERROR : divicion por cero"
-    
+        
 match operator:
     case "+": 
         print(f"la suma es igual a =  {suma(num1, num2)}") 
